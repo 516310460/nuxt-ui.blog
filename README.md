@@ -1,4 +1,4 @@
-# nuxtjs.org
+<!-- # nuxtjs.org
 
 Universal Vue.js Application built with [Nuxt.js](https://github.com/nuxt/nuxt.js).
 
@@ -49,4 +49,4 @@ Nuxt.js 官网 [nuxtjs.org](https://nuxtjs.org) 的简体中文版，由[凹凸�
 
 欢迎关注我们的微信公众号（微信里面搜`凹凸实验室`），关于 Nuxt.js 的最新信息会通过公众号发布。
 
-Chinese translation of primary Nuxt.js documentation site. Supported by [AOTU Labs](https://aotu.io).
+Chinese translation of primary Nuxt.js documentation site. Supported by [AOTU Labs](https://aotu.io). -->
