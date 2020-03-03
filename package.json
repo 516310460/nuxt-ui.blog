@@ -43,7 +43,7 @@
     "build": "nuxt build",
     "build:check": "nuxt build --analyze",
     "start": "nuxt start",
-    "start_pm": "NODE_ENV=production pm2 start ./node_modules/nuxt/bin/nuxt",
+    "prd": "pm2 start npm --name 'my-nuxt' -- run start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --ignore-pattern modules/ --ignore-pattern plugins/ga.js .",
     "precommit": "npm run lint"
