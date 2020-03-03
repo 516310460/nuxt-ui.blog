@@ -1,67 +1,53 @@
 {
   "name": "nuxt-ui",
-  "version": "0.0.5",
+  "version": "0.0.3",
   "description": "Nuxt UI components with configurable classes ready for TailwindCSS",
-  "main": "index.js",
-  "dependencies": {
-    "@nuxt/http": "^0.3.8",
-    "@nuxtjs/pwa": "^3.0.0-beta.19",
-    "@nuxtjs/tailwindcss": "1.2.0",
-    "@snackbar/core": "^1.7.0",
-    "degit": "^2.2.2",
-    "front-matter": "^3.0.2",
-    "fs-extra": "^8.1.0",
-    "get-port": "^5.1.0",
-    "glob": "^7.1.6",
-    "highlight.js": "^9.17.1",
-    "intersection-observer": "^0.7.0",
-    "lodash": "^4.17.15",
-    "marked": "^0.8.0",
-    "micro": "^9.3.4",
-    "mousetrap": "^1.6.3",
-    "node-fetch": "^2.6.0",
-    "normalize.css": "^8.0.1",
-    "nuxt": "^2.11.0",
-    "nuxt-svg-loader": "^1.0.1",
-    "octicons": "^8.5.0",
-    "v-lazy-image": "^1.3.2"
-  },
-  "devDependencies": {
-    "@nuxtjs/eslint-config": "^2.0.0",
-    "@nuxtjs/eslint-module": "^1.1.0",
-    "@nuxtjs/netlify-files": "^1.0.0",
-    "@nuxtjs/proxy": "^1.3.3",
-    "@nuxtjs/style-resources": "^1.0.0",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.8.0",
-    "globby": "^10.0.2",
-    "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0"
-  },
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "build:check": "nuxt build --analyze",
-    "start": "nuxt start",
-    "prd": "pm2 start npm --name 'my-nuxt' -- run start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --ignore-pattern modules/ --ignore-pattern plugins/ga.js .",
-    "precommit": "npm run lint"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/516310460/NuxtUI"
   },
   "keywords": [
-    "nuxt.js",
-    "vuejs",
-    "nextjs",
-    "js"
+    "tailwindcss",
+    "vue",
+    "nuxt",
+    "nuxt-ui",
+    "vue components",
+    "nuxt components",
+    "tailwind components"
   ],
-  "author": "alexchopin",
+  "author": "HomWang",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/516310460/NuxtUI/issues"
+  "main": "dist/nuxt-ui.common.js",
+  "private": false,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "build-bundle": "vue-cli-service build --target lib --name nuxt-ui index.js",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest"
   },
-  "homepage": "https://github.com/516310460/NuxtUI#readme"
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "body-scroll-lock": "^2.6.4",
+    "nuxt": "^2.0.0",
+    "vue-popperjs": "^2.1.0",
+    "vue2-datepicker": "^3.3.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.0.0",
+    "@vue/cli-service": "^3.11.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0",
+    "vue-jest": "^4.0.0-0"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": "./tailwind.config.js",
+      "autoprefixer": {}
+    }
+  }
 }
