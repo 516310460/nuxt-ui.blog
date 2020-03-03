@@ -9,8 +9,8 @@ export default {
     ]
   },
   server:{
-    host: "0.0.0.0",
-    host: '3000'
+    host: '0.0.0.0', // default: localhost,
+    port: 3000, // default: 3000
   },
   buildModules: [
     '@nuxtjs/eslint-module',
