@@ -24,6 +24,7 @@
     "build": "nuxt build",
     "build-bundle": "vue-cli-service build --target lib --name nuxt-ui index.js",
     "start": "nuxt start",
+    "prd": "pm2 start npm --name 'my-nuxt' -- run start",
     "generate": "nuxt generate",
     "test": "jest"
   },
