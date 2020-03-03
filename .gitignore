@@ -16,7 +16,7 @@ newrelic_agent.log
 .eslintrc
 
 # docs
-/docs
+# /docs
 
 # @nuxtjs/pwa
 sw.*
