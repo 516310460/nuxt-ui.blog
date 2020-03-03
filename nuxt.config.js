@@ -8,10 +8,6 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ]
   },
-  server:{
-    host: '0.0.0.0', // default: localhost,
-    port: 3000, // default: 3000
-  },
   buildModules: [
     '@nuxtjs/eslint-module',
     ['~/modules/docs/', { port: 3001 }],
